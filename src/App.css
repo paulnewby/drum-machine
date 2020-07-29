@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: -webkit-linear-gradient(30deg,  #4b6584 0%,#778ca3 33%,#a5b1c2 66%,#d1d8e0 100%);
+  margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: -webkit-linear-gradient(30deg,  #4b6584 0%,#778ca3 33%,#a5b1c2 66%,#d1d8e0 100%);  
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.display {
+  background: -webkit-linear-gradient(80deg,  #0c2461 0%,#0a3d62 33%,#30336b 66%,#535c68 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 6px solid black;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  width: 500px;
+  height: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+.display h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  color: #dfe2e9;
+
+}
+.box {
+  border: 6px solid black; 
+  border-radius: 25px;
+  background: -webkit-linear-gradient(30deg,  #1c7fac  0%,#29b6f6 33%, #53c4f7 66%,#99e4ee 100%);
+  color: #303952;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 60px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box.active {
+  opacity: 0.8;
+  transform: scale(0.95);
 }
