@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: -webkit-linear-gradient(30deg,  #4b6584 0%,#778ca3 33%,#a5b1c2 66%,#d1d8e0 100%);
+  background-image: radial-gradient(#002147	, #000B18); 
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
 
 .container {
-  background: -webkit-linear-gradient(30deg,  #4b6584 0%,#778ca3 33%,#a5b1c2 66%,#d1d8e0 100%);  
+  background-image: radial-gradient(#002147, #000B18); 
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -19,44 +19,56 @@ body {
   justify-content: center;
 }
 .display {
-  background: -webkit-linear-gradient(80deg,  #0c2461 0%,#0a3d62 33%,#30336b 66%,#535c68 100%);
+  background-color: #0058B3	;
+  border-radius: 25px;  
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  border: 6px solid black;
+  width: 747px;
+  height: 584px;
   border-radius: 25px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  padding: 20px;
-  width: 500px;
-  height: 700px;
+  box-shadow:
+  0 0 7px 3px #86FAF2,  /* inner white */
+  0 0 10px 7px #30E7ED, /* middle magenta */
+  0 0 140px 100px #00A6D7; /* outer cyan */
+  border: 4px solid #86FAF2; 
+  justify-content: center;
 }
+
 
 .display h1 {
   display: block;
   width: 100%;
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 80px;
-  color: #dfe2e9;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 60px;
+  color: #86FAF2;
+  margin-top: 10px;
 
 }
 .box {
-  border: 6px solid black; 
-  border-radius: 25px;
-  background: -webkit-linear-gradient(30deg,  #1c7fac  0%,#29b6f6 33%, #53c4f7 66%,#99e4ee 100%);
-  color: #303952;
+  border-radius: 25%;
+  margin-top: -20px;
+  margin-left: 20px;
   cursor: pointer;
-  margin: 20px;
-  font-size: 60px;
+  font-size: 20px;
   font-weight: bolder;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  height: 100px;
-  width: 100px;
-  display: flex;
+  text-align: center;
+  height: 72.6px;
+  font-family: 'Roboto Mono', monospace;
+  display: block;
+  width: 72.6px;
+  display: block;
+  justify-content: space-evenly;
   align-items: center;
   justify-content: center;
-
+  background-color: #003083	;
+  border-style: 4px solid;
+  border-color: #86FAF2;
+  box-shadow:
+  0 0 4px 2px #86FAF2,  
+  0 0 5px 3px #30E7ED, 
+  0 0 12px 8px #00A6D7; 
+  color: #86FAF2;
 }
 
 .box.active {

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 const sounds = [
   {
     key: 'Q',
@@ -9,7 +10,6 @@ const sounds = [
   {
     key: 'W',
     mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3'
-
   },
   {
     key: 'E',
@@ -39,7 +39,42 @@ const sounds = [
     key: 'O',
     mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3'
   },
-]
+  {
+    key: 'P',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'
+  },
+  {
+    key: 'A',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3'
+  }, 
+  {
+    key: 'S',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3'
+  }, 
+  {
+    key: 'D',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3'
+  }, 
+  {
+    key: 'F',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3'
+  }, 
+  {
+    key: 'G',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3'
+  }, 
+  {
+    key: 'H',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3'
+  }, 
+  {
+    key: 'J',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'
+  }, 
+  {
+    key: 'K',
+    mp3: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
+  }];
 
 
 const App = () => (
